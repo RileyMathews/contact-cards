@@ -11,8 +11,9 @@ Modules.
 const ContactCollection = require("./ContactCollection")
 const ContactElementFactory = require("./ContactBuilder")
 const addToDom = require("./DOMinator")
+const addAllContacts = require("./DisplayAllContacts")
 
 ContactCollection.saveDatabase()
 ContactCollection.addContact("Lyndz", "33333333", "singapore")
 ContactCollection.addContact("Mark", "44444444", "there")
-addToDom("#output", ContactElementFactory("Mark"))
+addToDom("#output", addAllContacts())
