@@ -1,7 +1,7 @@
 //object to hold methods to save, load, and write to database
 const ContactCollection = Object.create(null, {
     contacts: {
-        value: []
+        value: {}
     },
     loadDatabase: {
         value: function () {
@@ -15,13 +15,12 @@ const ContactCollection = Object.create(null, {
     },
     addContact: {
         value: function (name, number, address) {
-            this.contacts.push(
+            this.contacts[name] =
                 {
                     name,
                     number,
                     address
                 }
-            )
             this.saveDatabase()
         }
     }
