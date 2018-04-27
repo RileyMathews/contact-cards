@@ -11,3 +11,5 @@ Modules.
 ContactCollection = require("./ContactCollection")
 
 ContactCollection.saveDatabase()
+ContactCollection.addContact("Lyndz", "33333333", "singapore")
+ContactCollection.addContact("Mark", "44444444", "there")
