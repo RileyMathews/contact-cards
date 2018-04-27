@@ -25,7 +25,6 @@ const ContactCollection = Object.create(null, {
                     address
                 }
             this.saveDatabase()
-            console.log(this.contacts)
         }
     }
 })
