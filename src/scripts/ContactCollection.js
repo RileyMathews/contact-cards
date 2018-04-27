@@ -18,11 +18,13 @@ const ContactCollection = Object.create(null, {
     },
     addContact: {
         value: function (name, number, address) {
+            const uniqueID = Math.floor(Math.random() * number + 1)
             this.contacts[name] =
                 {
                     name,
                     number,
-                    address
+                    address,
+                    ID: uniqueID
                 }
             this.saveDatabase()
         }
