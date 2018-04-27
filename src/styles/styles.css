@@ -1,0 +1,58 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: arial;
+    margin: 0;
+}
+
+.wrapper {
+    width: 100%;
+    margin: auto;
+    align-content: center;
+    text-align: center;
+}
+
+header {
+    background-color: rgb(6, 21, 155);
+    padding-top: 1em;
+}
+
+div {
+    margin: auto;
+}
+
+input {
+    font-size: 2em;
+    border: 3px solid black;
+    padding-left: .5em;
+    margin-bottom: .5em;
+    text-align: center;
+}
+
+button {
+    font-size: 1.3em;
+    background-color: rgb(98, 118, 207);
+    border: none;
+    padding: .7em;
+    border-radius: 4px;
+    margin-bottom: .5em;
+}
+
+button + button {
+    margin-left: 1em;
+}
+
+#output {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+card {
+    margin: 1em;
+    border: 1px solid black;
+    padding: 1em 2em 2em 1em;
+    text-align: center;
+}
