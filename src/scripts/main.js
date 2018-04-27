@@ -8,7 +8,7 @@ Modules.
 3. contact form component to add a person
 */
 
-ContactCollection = require("./ContactCollection")
+const ContactCollection = require("./ContactCollection")
 
 ContactCollection.saveDatabase()
 ContactCollection.addContact("Lyndz", "33333333", "singapore")
