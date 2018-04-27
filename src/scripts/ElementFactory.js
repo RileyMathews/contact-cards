@@ -4,9 +4,9 @@ const ElementFactory = Object.create(null, {
         value: function (element, text) {
             const htmlElement = document.createElement(element)
             htmlElement.textContent = text
-            return element
+            return htmlElement
         }
-    }
+    },
 })
 
 module.exports = ElementFactory

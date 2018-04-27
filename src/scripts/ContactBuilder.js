@@ -15,7 +15,9 @@ const contactElementFactory = (contactName) => {
     card.appendChild(ElementFactory.textElement("p", contact.number))
 
     //create address
-    card.appendChild(Elementfactory.textElement("p", contact.address))
+    card.appendChild(ElementFactory.textElement("p", contact.address))
 
     return card
 }
+
+module.exports = contactElementFactory
