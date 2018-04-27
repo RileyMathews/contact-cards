@@ -1,11 +1,14 @@
 //object to hold methods to save, load, and write to database
 const ContactCollection = Object.create(null, {
     contacts: {
-        value: {}
+        value: {},
+        writable: true
     },
     loadDatabase: {
         value: function () {
-            this.contacts = localStorage.getItem(JSON.parse("Contacts"))
+            if (localStorage.getItem("Contacts") !== null) {
+                this.contacts = JSON.parse(localStorage.getItem("Contacts"))
+            }
         },
     },
     saveDatabase: {
@@ -22,6 +25,7 @@ const ContactCollection = Object.create(null, {
                     address
                 }
             this.saveDatabase()
+            console.log(this.contacts)
         }
     }
 })
