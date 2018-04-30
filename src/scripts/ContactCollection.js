@@ -18,7 +18,12 @@ const ContactCollection = Object.create(null, {
     },
     addContact: {
         value: function (name, number, address) {
-            const uniqueID = Math.floor(Math.random() * number + 1)
+            let uniqueID = Math.floor(Math.random() * number + 1)
+            for (const key in ContactCollection) {
+                if (key.ID === uniqueID) {
+                    uniqueID = Math.floor(Math.random() * number + 1)
+                }
+            }
             this.contacts[name] =
                 {
                     name,
